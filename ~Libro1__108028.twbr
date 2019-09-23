@@ -1,0 +1,1521 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20193.19.0821.2225                               -->
+<workbook source-build='2019.3.0 (20193.19.0821.2225)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts ignorable='true' predowngraded='true' />
+    <Heatmap />
+    <MapboxVectorStylesAndLayers />
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='empresas' inline='true' name='federated.1wxsy7f0ngdcqk1gqvd5w15szgub' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='empresas' name='semistructpassivestore-direct.0p2vs151qjrids11dcgsh03cj0ai'>
+            <connection class='semistructpassivestore-direct' directory='C:/Users/anjel/Desktop' filename='empresas.json' password='' server=''>
+              <semistruct-schemas>
+                <semistruct-schema table='[empresas.json]'>
+                  <map key='competitions' value='false' />
+                  <map key='competitions.Valor' value='false' />
+                  <map key='competitions.Valor.competitor' value='false' />
+                  <map key='funding_rounds' value='false' />
+                  <map key='funding_rounds.Valor' value='false' />
+                  <map key='funding_rounds.Valor.investments' value='false' />
+                  <map key='funding_rounds.Valor.investments.Valor' value='false' />
+                  <map key='funding_rounds.Valor.investments.Valor.company' value='false' />
+                  <map key='funding_rounds.Valor.investments.Valor.financial_org' value='false' />
+                  <map key='funding_rounds.Valor.investments.Valor.person' value='false' />
+                  <map key='geo' value='true' />
+                  <map key='geo.coordinates' value='true' />
+                  <map key='offices' value='true' />
+                  <map key='offices.Valor' value='true' />
+                  <map key='relationships' value='false' />
+                  <map key='relationships.Valor' value='false' />
+                  <map key='relationships.Valor.person' value='false' />
+                  <map key='{root}' value='true' />
+                </semistruct-schema>
+              </semistruct-schemas>
+            </connection>
+          </named-connection>
+        </named-connections>
+        <relation connection='semistructpassivestore-direct.0p2vs151qjrids11dcgsh03cj0ai' name='empresas.json' table='[empresas.json]' type='table' />
+        <cols>
+          <map key='[address1]' value='[empresas.json].[offices.Valor.address1]' />
+          <map key='[address2]' value='[empresas.json].[offices.Valor.address2]' />
+          <map key='[alias_list]' value='[empresas.json].[alias_list]' />
+          <map key='[category_code]' value='[empresas.json].[category_code]' />
+          <map key='[city]' value='[empresas.json].[offices.Valor.city]' />
+          <map key='[coordinates Índice (generado)]' value='[empresas.json].[geo.coordinates.Índice (generado)]' />
+          <map key='[coordinates]' value='[empresas.json].[geo.coordinates.Valor]' />
+          <map key='[country_code]' value='[empresas.json].[offices.Valor.country_code]' />
+          <map key='[created_at]' value='[empresas.json].[created_at]' />
+          <map key='[description (offices)]' value='[empresas.json].[offices.Valor.description]' />
+          <map key='[description]' value='[empresas.json].[description]' />
+          <map key='[founded_day]' value='[empresas.json].[founded_day]' />
+          <map key='[founded_month]' value='[empresas.json].[founded_month]' />
+          <map key='[founded_year]' value='[empresas.json].[founded_year]' />
+          <map key='[latitude]' value='[empresas.json].[offices.Valor.latitude]' />
+          <map key='[longitude]' value='[empresas.json].[offices.Valor.longitude]' />
+          <map key='[name]' value='[empresas.json].[name]' />
+          <map key='[number_of_employees]' value='[empresas.json].[number_of_employees]' />
+          <map key='[offices Índice (generado)]' value='[empresas.json].[offices.Índice (generado)]' />
+          <map key='[overview]' value='[empresas.json].[overview]' />
+          <map key='[phone_number]' value='[empresas.json].[phone_number]' />
+          <map key='[state_code]' value='[empresas.json].[offices.Valor.state_code]' />
+          <map key='[total_money_raised]' value='[empresas.json].[total_money_raised]' />
+          <map key='[type]' value='[empresas.json].[geo.type]' />
+          <map key='[zip_code]' value='[empresas.json].[offices.Valor.zip_code]' />
+          <map key='[Índice del documento (generado)]' value='[empresas.json].[Índice del documento (generado)]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Índice del documento (generado)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Índice del documento (generado)]</local-name>
+            <parent-name>[empresas.json]</parent-name>
+            <remote-alias>Índice del documento (generado)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>alias_list</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[alias_list]</local-name>
+            <parent-name>[empresas.json]</parent-name>
+            <remote-alias>alias_list</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category_code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[category_code]</local-name>
+            <parent-name>[empresas.json]</parent-name>
+            <remote-alias>category_code</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_at</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[created_at]</local-name>
+            <parent-name>[empresas.json]</parent-name>
+            <remote-alias>created_at</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[description]</local-name>
+            <parent-name>[empresas.json]</parent-name>
+            <remote-alias>description</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>founded_day</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[founded_day]</local-name>
+            <parent-name>[empresas.json]</parent-name>
+            <remote-alias>founded_day</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>founded_month</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[founded_month]</local-name>
+            <parent-name>[empresas.json]</parent-name>
+            <remote-alias>founded_month</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>founded_year</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[founded_year]</local-name>
+            <parent-name>[empresas.json]</parent-name>
+            <remote-alias>founded_year</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>geo.coordinates.Índice (generado)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[coordinates Índice (generado)]</local-name>
+            <parent-name>[empresas.json]</parent-name>
+            <remote-alias>geo.coordinates.Índice (generado)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>geo.coordinates.Valor</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[coordinates]</local-name>
+            <parent-name>[empresas.json]</parent-name>
+            <remote-alias>geo.coordinates.Valor</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>geo.type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[empresas.json]</parent-name>
+            <remote-alias>geo.type</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[empresas.json]</parent-name>
+            <remote-alias>name</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number_of_employees</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[number_of_employees]</local-name>
+            <parent-name>[empresas.json]</parent-name>
+            <remote-alias>number_of_employees</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>offices.Índice (generado)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[offices Índice (generado)]</local-name>
+            <parent-name>[empresas.json]</parent-name>
+            <remote-alias>offices.Índice (generado)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>offices.Valor.address1</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[address1]</local-name>
+            <parent-name>[empresas.json]</parent-name>
+            <remote-alias>offices.Valor.address1</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>offices.Valor.address2</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[address2]</local-name>
+            <parent-name>[empresas.json]</parent-name>
+            <remote-alias>offices.Valor.address2</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>offices.Valor.city</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[empresas.json]</parent-name>
+            <remote-alias>offices.Valor.city</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>offices.Valor.country_code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[country_code]</local-name>
+            <parent-name>[empresas.json]</parent-name>
+            <remote-alias>offices.Valor.country_code</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>offices.Valor.description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[description (offices)]</local-name>
+            <parent-name>[empresas.json]</parent-name>
+            <remote-alias>offices.Valor.description</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>offices.Valor.latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[empresas.json]</parent-name>
+            <remote-alias>offices.Valor.latitude</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>offices.Valor.longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[empresas.json]</parent-name>
+            <remote-alias>offices.Valor.longitude</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>offices.Valor.state_code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[state_code]</local-name>
+            <parent-name>[empresas.json]</parent-name>
+            <remote-alias>offices.Valor.state_code</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>offices.Valor.zip_code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[zip_code]</local-name>
+            <parent-name>[empresas.json]</parent-name>
+            <remote-alias>offices.Valor.zip_code</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>overview</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[overview]</local-name>
+            <parent-name>[empresas.json]</parent-name>
+            <remote-alias>overview</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>phone_number</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[phone_number]</local-name>
+            <parent-name>[empresas.json]</parent-name>
+            <remote-alias>phone_number</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_money_raised</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[total_money_raised]</local-name>
+            <parent-name>[empresas.json]</parent-name>
+            <remote-alias>total_money_raised</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' is-auto-gen-lod-field='true' name='[Coordinates por coordinates]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Índice del documento (generado)],[coordinates Índice (generado)] : MAX([coordinates]) }' />
+        <desc>
+          <formatted-text>
+            <run>Una medida calculada que está al coordinates de nivel de detalle</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Avg' datatype='real' is-auto-gen-lod-field='true' name='[Latitude por offices]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Índice del documento (generado)],[offices Índice (generado)] : MAX([latitude]) }' />
+        <desc>
+          <formatted-text>
+            <run>Una medida calculada que está al offices de nivel de detalle</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Avg' datatype='real' is-auto-gen-lod-field='true' name='[Longitude por offices]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Índice del documento (generado)],[offices Índice (generado)] : MAX([longitude]) }' />
+        <desc>
+          <formatted-text>
+            <run>Una medida calculada que está al offices de nivel de detalle</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' is-auto-gen-lod-field='true' name='[Number Of Employees por Documento]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Índice del documento (generado)] : MAX([number_of_employees]) }' />
+        <desc>
+          <formatted-text>
+            <run>Una medida calculada que está al Documento de nivel de detalle</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' is-auto-gen-lod-field='true' name='[Número de registros por coordinates]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ INCLUDE [Índice del documento (generado)] : COUNTD([coordinates Índice (generado)]) }' />
+        <desc>
+          <formatted-text>
+            <run>Una medida calculada que está al coordinates de nivel de detalle</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='integer' is-auto-gen-lod-field='true' name='[Número de registros por empresas.json]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([Índice del documento (generado)])' />
+        <desc>
+          <formatted-text>
+            <run>Una medida calculada que está al empresas.json de nivel de detalle</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='integer' is-auto-gen-lod-field='true' name='[Número de registros por offices]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ INCLUDE [Índice del documento (generado)] : COUNTD([offices Índice (generado)]) }' />
+        <desc>
+          <formatted-text>
+            <run>Una medida calculada que está al offices de nivel de detalle</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Address1' datatype='string' name='[address1]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>offices.Valor.address1</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Address2' datatype='string' name='[address2]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>offices.Valor.address2</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Alias List' datatype='string' name='[alias_list]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>alias_list</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Category Code' datatype='string' name='[category_code]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>category_code</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>offices.Valor.city</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Sum' caption='Coordinates Índice (Generado)' datatype='real' datatype-customized='true' name='[coordinates Índice (generado)]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>geo.coordinates.Índice (generado)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Coordinates' datatype='real' name='[coordinates]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>geo.coordinates.Valor</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Country Code' datatype='string' name='[country_code]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>offices.Valor.country_code</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Created At' datatype='string' name='[created_at]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>created_at</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Description (Offices)' datatype='string' name='[description (offices)]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>offices.Valor.description</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>description</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Sum' caption='Founded Day' datatype='real' name='[founded_day]' role='dimension' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>founded_day</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Sum' caption='Founded Month' datatype='real' name='[founded_month]' role='dimension' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>founded_month</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Sum' caption='Founded Year' datatype='real' name='[founded_year]' role='dimension' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>founded_year</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>offices.Valor.latitude</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>offices.Valor.longitude</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>name</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Number Of Employees' datatype='real' name='[number_of_employees]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>number_of_employees</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Sum' caption='Offices Índice (Generado)' datatype='integer' name='[offices Índice (generado)]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>offices.Índice (generado)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Overview' datatype='string' name='[overview]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>overview</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Phone Number' datatype='string' name='[phone_number]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>phone_number</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='State Code' datatype='string' name='[state_code]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>offices.Valor.state_code</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Total Money Raised' datatype='string' name='[total_money_raised]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>total_money_raised</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>geo.type</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Zip Code' datatype='string' name='[zip_code]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>offices.Valor.zip_code</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Sum' caption='Índice Del Documento (Generado)' datatype='integer' name='[Índice del documento (generado)]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>Índice del documento (generado)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column-instance column='[Latitude por offices]' derivation='Avg' name='[avg:Latitude por offices:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Latitude por offices]' derivation='None' name='[none:Latitude por offices:qk]' pivot='key' type='quantitative' />
+      <folder name='Empresas' role='dimensions'>
+        <folder-item name='[alias_list]' type='field' />
+        <folder-item name='[category_code]' type='field' />
+        <folder-item name='[created_at]' type='field' />
+        <folder-item name='[description]' type='field' />
+        <folder-item name='[founded_day]' type='field' />
+        <folder-item name='[founded_month]' type='field' />
+        <folder-item name='[founded_year]' type='field' />
+        <folder-item name='[name]' type='field' />
+        <folder-item name='[overview]' type='field' />
+        <folder-item name='[phone_number]' type='field' />
+        <folder-item name='[total_money_raised]' type='field' />
+        <folder-item name='[Índice del documento (generado)]' type='field' />
+      </folder>
+      <folder name='Geo' role='dimensions'>
+        <folder-item name='[coordinates Índice (generado)]' type='field' />
+        <folder-item name='[type]' type='field' />
+      </folder>
+      <folder name='Offices' role='dimensions'>
+        <folder-item name='[address1]' type='field' />
+        <folder-item name='[address2]' type='field' />
+        <folder-item name='[city]' type='field' />
+        <folder-item name='[country_code]' type='field' />
+        <folder-item name='[description (offices)]' type='field' />
+        <folder-item name='[offices Índice (generado)]' type='field' />
+        <folder-item name='[state_code]' type='field' />
+        <folder-item name='[zip_code]' type='field' />
+      </folder>
+      <folder name='Medidas de fuente' role='measures'>
+        <folder-item name='[coordinates]' type='field' />
+        <folder-item name='[latitude]' type='field' />
+        <folder-item name='[longitude]' type='field' />
+        <folder-item name='[number_of_employees]' type='field' />
+      </folder>
+      <layout dim-ordering='alphabetic' dim-percentage='0.637744' measure-ordering='alphabetic' measure-percentage='0.362256' show-structure='false' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0bqkbw10k50fb01af2c6g1w4wsb8].[none:Latitude:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1wxsy7f0ngdcqk1gqvd5w15szgub].[avg:Latitude por offices:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1wxsy7f0ngdcqk1gqvd5w15szgub].[none:Latitude por offices:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1wxsy7f0ngdcqk1gqvd5w15szgub]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <datasource-dependencies datasource='federated.0bqkbw10k50fb01af2c6g1w4wsb8'>
+        <column aggregation='Avg' datatype='real' datatype-customized='true' name='[Latitude]' role='dimension' semantic-role='[Geographical].[Latitude]' type='quantitative'>
+          <desc>
+            <formatted-text>
+              <run>Latitude</run>
+            </formatted-text>
+          </desc>
+        </column>
+        <column-instance column='[Latitude]' derivation='None' name='[none:Latitude:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+    </datasource>
+    <datasource caption='usa' inline='true' name='federated.0bqkbw10k50fb01af2c6g1w4wsb8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='usa' name='semistructpassivestore-direct.19bu2ke0vovehr175u1b21jlsza9'>
+            <connection class='semistructpassivestore-direct' directory='C:/Users/anjel/Desktop' filename='usa.json' password='' server=''>
+              <semistruct-schemas>
+                <semistruct-schema table='[usa.json]'>
+                  <map key='{root}' value='true' />
+                </semistruct-schema>
+              </semistruct-schemas>
+            </connection>
+          </named-connection>
+        </named-connections>
+        <relation connection='semistructpassivestore-direct.19bu2ke0vovehr175u1b21jlsza9' name='usa.json' table='[usa.json]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Índice del documento (generado)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Índice del documento (generado)]</local-name>
+            <parent-name>[usa.json]</parent-name>
+            <remote-alias>Índice del documento (generado)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Brand</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Brand]</local-name>
+            <parent-name>[usa.json]</parent-name>
+            <remote-alias>Brand</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[usa.json]</parent-name>
+            <remote-alias>City</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[usa.json]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[usa.json]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[usa.json]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ownership Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Ownership Type]</local-name>
+            <parent-name>[usa.json]</parent-name>
+            <remote-alias>Ownership Type</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Phone Number</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Phone Number]</local-name>
+            <parent-name>[usa.json]</parent-name>
+            <remote-alias>Phone Number</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Postcode</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Postcode]</local-name>
+            <parent-name>[usa.json]</parent-name>
+            <remote-alias>Postcode</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State/Province</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State/Province]</local-name>
+            <parent-name>[usa.json]</parent-name>
+            <remote-alias>State/Province</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Store Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Store Name]</local-name>
+            <parent-name>[usa.json]</parent-name>
+            <remote-alias>Store Name</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Store Number</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Store Number]</local-name>
+            <parent-name>[usa.json]</parent-name>
+            <remote-alias>Store Number</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Street Address</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Street Address]</local-name>
+            <parent-name>[usa.json]</parent-name>
+            <remote-alias>Street Address</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Timezone</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Timezone]</local-name>
+            <parent-name>[usa.json]</parent-name>
+            <remote-alias>Timezone</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Brand]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>Brand</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>City</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>Country</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Avg' datatype='real' datatype-customized='true' name='[Latitude]' role='dimension' semantic-role='[Geographical].[Latitude]' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>Latitude</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Avg' datatype='real' datatype-customized='true' name='[Longitude]' role='dimension' semantic-role='[Geographical].[Longitude]' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>Longitude</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='string' name='[Ownership Type]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>Ownership Type</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' name='[Phone Number]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>Phone Number</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' name='[Postcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>Postcode</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' name='[State/Province]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>State/Province</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' name='[Store Name]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>Store Name</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' name='[Store Number]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>Store Number</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' name='[Street Address]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>Street Address</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' name='[Timezone]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>Timezone</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Sum' caption='Índice Del Documento (Generado)' datatype='integer' name='[Índice del documento (generado)]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>Índice del documento (generado)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <folder name='Usa' role='dimensions'>
+        <folder-item name='[Brand]' type='field' />
+        <folder-item name='[City]' type='field' />
+        <folder-item name='[Country]' type='field' />
+        <folder-item name='[Latitude]' type='field' />
+        <folder-item name='[Longitude]' type='field' />
+        <folder-item name='[Ownership Type]' type='field' />
+        <folder-item name='[Phone Number]' type='field' />
+        <folder-item name='[Postcode]' type='field' />
+        <folder-item name='[State/Province]' type='field' />
+        <folder-item name='[Store Name]' type='field' />
+        <folder-item name='[Store Number]' type='field' />
+        <folder-item name='[Street Address]' type='field' />
+        <folder-item name='[Timezone]' type='field' />
+        <folder-item name='[Índice del documento (generado)]' type='field' />
+      </folder>
+      <layout dim-ordering='alphabetic' dim-percentage='0.774403' measure-ordering='alphabetic' measure-percentage='0.225597' show-structure='false' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' palette='red_10_0' type='palette'>
+            <map to='#f26250'>
+              <bucket>&quot;[federated.0bqkbw10k50fb01af2c6g1w4wsb8]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Filtro 1 (generado)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Hoja 2' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Hoja 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Companies</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='empresas' name='federated.1wxsy7f0ngdcqk1gqvd5w15szgub' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1wxsy7f0ngdcqk1gqvd5w15szgub'>
+            <column aggregation='Avg' datatype='real' is-auto-gen-lod-field='true' name='[Latitude por offices]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [Índice del documento (generado)],[offices Índice (generado)] : MAX([latitude]) }' />
+              <desc>
+                <formatted-text>
+                  <run>Una medida calculada que está al offices de nivel de detalle</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column aggregation='Avg' datatype='real' is-auto-gen-lod-field='true' name='[Longitude por offices]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [Índice del documento (generado)],[offices Índice (generado)] : MAX([longitude]) }' />
+              <desc>
+                <formatted-text>
+                  <run>Una medida calculada que está al offices de nivel de detalle</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column datatype='real' is-auto-gen-lod-field='true' name='[Number Of Employees por Documento]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [Índice del documento (generado)] : MAX([number_of_employees]) }' />
+              <desc>
+                <formatted-text>
+                  <run>Una medida calculada que está al Documento de nivel de detalle</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[Latitude por offices]' derivation='Avg' name='[avg:Latitude por offices:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Longitude por offices]' derivation='Avg' name='[avg:Longitude por offices:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Founded Year' datatype='real' name='[founded_year]' role='dimension' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>founded_year</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>offices.Valor.latitude</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>offices.Valor.longitude</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>name</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[Number Of Employees por Documento]' derivation='None' name='[none:Number Of Employees por Documento:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[founded_year]' derivation='None' name='[none:founded_year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_money_raised]' derivation='None' name='[none:total_money_raised:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Employees' datatype='real' name='[number_of_employees]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>number_of_employees</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column aggregation='Sum' caption='Offices Índice (Generado)' datatype='integer' name='[offices Índice (generado)]' role='dimension' type='ordinal'>
+              <desc>
+                <formatted-text>
+                  <run>offices.Índice (generado)</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[Number Of Employees por Documento]' derivation='Sum' name='[sum:Number Of Employees por Documento:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Money Raised' datatype='string' name='[total_money_raised]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>total_money_raised</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column aggregation='Sum' caption='Índice Del Documento (Generado)' datatype='integer' name='[Índice del documento (generado)]' role='dimension' type='ordinal'>
+              <desc>
+                <formatted-text>
+                  <run>Índice del documento (generado)</run>
+                </formatted-text>
+              </desc>
+            </column>
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1wxsy7f0ngdcqk1gqvd5w15szgub].[none:Number Of Employees por Documento:qk]' included-values='in-range'>
+            <min>10.0</min>
+            <max>10000.0</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1wxsy7f0ngdcqk1gqvd5w15szgub].[none:founded_year:qk]' included-values='in-range'>
+            <min>2004.0</min>
+            <max>2013.0</max>
+          </filter>
+          <filter class='categorical' column='[federated.1wxsy7f0ngdcqk1gqvd5w15szgub].[none:total_money_raised:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter from='&quot;$1.15B&quot;' function='range' level='[none:total_money_raised:nk]' to='&quot;$1.5M&quot;' />
+              <groupfilter from='&quot;$1.75M&quot;' function='range' level='[none:total_money_raised:nk]' to='&quot;$1.9M&quot;' />
+              <groupfilter from='&quot;$10.4M&quot;' function='range' level='[none:total_money_raised:nk]' to='&quot;$18.8M&quot;' />
+              <groupfilter from='&quot;$18M&quot;' function='range' level='[none:total_money_raised:nk]' to='&quot;$21.3M&quot;' />
+              <groupfilter from='&quot;$21M&quot;' function='range' level='[none:total_money_raised:nk]' to='&quot;$22.8M&quot;' />
+              <groupfilter from='&quot;$23.4M&quot;' function='range' level='[none:total_money_raised:nk]' to='&quot;$24.7M&quot;' />
+              <groupfilter function='member' level='[none:total_money_raised:nk]' member='&quot;$24M&quot;' />
+              <groupfilter function='member' level='[none:total_money_raised:nk]' member='&quot;$25.5M&quot;' />
+              <groupfilter from='&quot;$25M&quot;' function='range' level='[none:total_money_raised:nk]' to='&quot;$3.01M&quot;' />
+              <groupfilter function='member' level='[none:total_money_raised:nk]' member='&quot;$3.18M&quot;' />
+              <groupfilter function='member' level='[none:total_money_raised:nk]' member='&quot;$3.2M&quot;' />
+              <groupfilter from='&quot;$3.54M&quot;' function='range' level='[none:total_money_raised:nk]' to='&quot;$3.65M&quot;' />
+              <groupfilter from='&quot;$3.77M&quot;' function='range' level='[none:total_money_raised:nk]' to='&quot;$30.6M&quot;' />
+              <groupfilter from='&quot;$30M&quot;' function='range' level='[none:total_money_raised:nk]' to='&quot;$34M&quot;' />
+              <groupfilter from='&quot;$35M&quot;' function='range' level='[none:total_money_raised:nk]' to='&quot;$37.8M&quot;' />
+              <groupfilter from='&quot;$37M&quot;' function='range' level='[none:total_money_raised:nk]' to='&quot;$40M&quot;' />
+              <groupfilter function='member' level='[none:total_money_raised:nk]' member='&quot;$41.3M&quot;' />
+              <groupfilter function='member' level='[none:total_money_raised:nk]' member='&quot;$42.7M&quot;' />
+              <groupfilter from='&quot;$44.8M&quot;' function='range' level='[none:total_money_raised:nk]' to='&quot;$5.18M&quot;' />
+              <groupfilter from='&quot;$5.1M&quot;' function='range' level='[none:total_money_raised:nk]' to='&quot;$5.84M&quot;' />
+              <groupfilter function='member' level='[none:total_money_raised:nk]' member='&quot;$5.92M&quot;' />
+              <groupfilter function='member' level='[none:total_money_raised:nk]' member='&quot;$50k&quot;' />
+              <groupfilter function='member' level='[none:total_money_raised:nk]' member='&quot;$51.4M&quot;' />
+              <groupfilter from='&quot;$55.6M&quot;' function='range' level='[none:total_money_raised:nk]' to='&quot;$60.1M&quot;' />
+              <groupfilter from='&quot;$60M&quot;' function='range' level='[none:total_money_raised:nk]' to='&quot;$61M&quot;' />
+              <groupfilter from='&quot;$69.1M&quot;' function='range' level='[none:total_money_raised:nk]' to='&quot;$71.8M&quot;' />
+              <groupfilter function='member' level='[none:total_money_raised:nk]' member='&quot;$795k&quot;' />
+              <groupfilter function='member' level='[none:total_money_raised:nk]' member='&quot;$7M&quot;' />
+              <groupfilter from='&quot;$8.11M&quot;' function='range' level='[none:total_money_raised:nk]' to='&quot;$9M&quot;' />
+              <groupfilter function='member' level='[none:total_money_raised:nk]' member='&quot;£12.5M&quot;' />
+              <groupfilter function='member' level='[none:total_money_raised:nk]' member='&quot;£2.7M&quot;' />
+              <groupfilter function='member' level='[none:total_money_raised:nk]' member='&quot;£3M&quot;' />
+              <groupfilter function='member' level='[none:total_money_raised:nk]' member='&quot;£4.3M&quot;' />
+              <groupfilter function='member' level='[none:total_money_raised:nk]' member='&quot;£7M&quot;' />
+              <groupfilter from='&quot;€1.04M&quot;' function='range' level='[none:total_money_raised:nk]' to='&quot;€1.6M&quot;' />
+              <groupfilter function='member' level='[none:total_money_raised:nk]' member='&quot;€1.7M&quot;' />
+              <groupfilter function='member' level='[none:total_money_raised:nk]' member='&quot;€11.5M&quot;' />
+              <groupfilter from='&quot;€1M&quot;' function='range' level='[none:total_money_raised:nk]' to='&quot;€3.9M&quot;' />
+              <groupfilter function='member' level='[none:total_money_raised:nk]' member='&quot;€3M&quot;' />
+              <groupfilter function='member' level='[none:total_money_raised:nk]' member='&quot;€850k&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1wxsy7f0ngdcqk1gqvd5w15szgub].[none:Number Of Employees por Documento:qk]</column>
+            <column>[federated.1wxsy7f0ngdcqk1gqvd5w15szgub].[none:total_money_raised:nk]</column>
+            <column>[federated.1wxsy7f0ngdcqk1gqvd5w15szgub].[none:founded_year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1wxsy7f0ngdcqk1gqvd5w15szgub].[avg:Longitude por offices:qk]' field-type='quantitative' max='7862251.0856057443' min='-8812412.3693873063' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1wxsy7f0ngdcqk1gqvd5w15szgub].[avg:Latitude por offices:qk]' field-type='quantitative' max='13153306.070852704' min='-12117612.679446988' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='in-tooltip' field='[federated.1wxsy7f0ngdcqk1gqvd5w15szgub].[avg:Longitude por offices:qk]' value='false' />
+            <format attr='in-tooltip' field='[federated.1wxsy7f0ngdcqk1gqvd5w15szgub].[avg:Latitude por offices:qk]' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.1wxsy7f0ngdcqk1gqvd5w15szgub].[none:name:nk]' />
+              <lod column='[federated.1wxsy7f0ngdcqk1gqvd5w15szgub].[sum:Number Of Employees por Documento:qk]' />
+              <lod column='[federated.1wxsy7f0ngdcqk1gqvd5w15szgub].[none:total_money_raised:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.75762432813644409' />
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1wxsy7f0ngdcqk1gqvd5w15szgub].[avg:Latitude por offices:qk]</rows>
+        <cols>[federated.1wxsy7f0ngdcqk1gqvd5w15szgub].[avg:Longitude por offices:qk]</cols>
+      </table>
+      <simple-id uuid='{F0B76CA8-3BF3-4A5C-ABD1-6D9448582151}' />
+    </worksheet>
+    <worksheet name='Hoja 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Starbucks</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='usa' name='federated.0bqkbw10k50fb01af2c6g1w4wsb8' />
+            <datasource caption='empresas' name='federated.1wxsy7f0ngdcqk1gqvd5w15szgub' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0bqkbw10k50fb01af2c6g1w4wsb8'>
+            <column datatype='string' name='[Brand]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>Brand</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>City</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column aggregation='Avg' datatype='real' datatype-customized='true' name='[Latitude]' role='dimension' semantic-role='[Geographical].[Latitude]' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>Latitude</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column aggregation='Avg' datatype='real' datatype-customized='true' name='[Longitude]' role='dimension' semantic-role='[Geographical].[Longitude]' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>Longitude</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column datatype='string' name='[State/Province]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>State/Province</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[Brand]' derivation='None' name='[none:Brand:nk]' pivot='key' type='nominal' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Latitude]' derivation='None' name='[none:Latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Longitude]' derivation='None' name='[none:Longitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[State/Province]' derivation='None' name='[none:State/Province:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1wxsy7f0ngdcqk1gqvd5w15szgub'>
+            <column aggregation='Avg' datatype='real' is-auto-gen-lod-field='true' name='[Longitude por offices]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [Índice del documento (generado)],[offices Índice (generado)] : MAX([longitude]) }' />
+              <desc>
+                <formatted-text>
+                  <run>Una medida calculada que está al offices de nivel de detalle</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column aggregation='Sum' caption='Coordinates Índice (Generado)' datatype='real' datatype-customized='true' name='[coordinates Índice (generado)]' role='dimension' type='ordinal'>
+              <desc>
+                <formatted-text>
+                  <run>geo.coordinates.Índice (generado)</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>offices.Valor.longitude</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[Longitude por offices]' derivation='None' name='[none:Longitude por offices:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[coordinates Índice (generado)]' derivation='None' name='[none:coordinates Índice (generado):ok]' pivot='key' type='ordinal' />
+            <column aggregation='Sum' caption='Offices Índice (Generado)' datatype='integer' name='[offices Índice (generado)]' role='dimension' type='ordinal'>
+              <desc>
+                <formatted-text>
+                  <run>offices.Índice (generado)</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column aggregation='Sum' caption='Índice Del Documento (Generado)' datatype='integer' name='[Índice del documento (generado)]' role='dimension' type='ordinal'>
+              <desc>
+                <formatted-text>
+                  <run>Índice del documento (generado)</run>
+                </formatted-text>
+              </desc>
+            </column>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0bqkbw10k50fb01af2c6g1w4wsb8].[none:Longitude:qk]' field-type='quantitative' max='4664048.5674348883' min='-28530339.664923348' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0bqkbw10k50fb01af2c6g1w4wsb8].[none:Latitude:qk]' field-type='quantitative' max='13023725.833967058' min='-2975217.2273398954' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.1wxsy7f0ngdcqk1gqvd5w15szgub].[none:Longitude por offices:qk]' field-type='quantitative' fold='true' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='in-tooltip' field='[federated.0bqkbw10k50fb01af2c6g1w4wsb8].[none:Latitude:qk]' value='false' />
+            <format attr='in-tooltip' field='[federated.0bqkbw10k50fb01af2c6g1w4wsb8].[none:Longitude:qk]' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.0bqkbw10k50fb01af2c6g1w4wsb8].[none:Brand:nk]' />
+              <lod column='[federated.0bqkbw10k50fb01af2c6g1w4wsb8].[none:City:nk]' />
+              <lod column='[federated.0bqkbw10k50fb01af2c6g1w4wsb8].[none:State/Province:nk]' />
+              <lod column='[federated.1wxsy7f0ngdcqk1gqvd5w15szgub].[none:coordinates Índice (generado):ok]' />
+              <color column='[federated.0bqkbw10k50fb01af2c6g1w4wsb8].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#59a14f' />
+                <format attr='size' value='0.2738673985004425' />
+                <encoding attr='density-color' palette='green_10_0' type='interpolated' />
+                <format attr='mark-transparency' value='193' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0bqkbw10k50fb01af2c6g1w4wsb8].[none:Longitude:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.0bqkbw10k50fb01af2c6g1w4wsb8].[none:Brand:nk]' />
+              <lod column='[federated.0bqkbw10k50fb01af2c6g1w4wsb8].[none:City:nk]' />
+              <lod column='[federated.0bqkbw10k50fb01af2c6g1w4wsb8].[none:State/Province:nk]' />
+              <lod column='[federated.1wxsy7f0ngdcqk1gqvd5w15szgub].[none:coordinates Índice (generado):ok]' />
+              <color column='[federated.0bqkbw10k50fb01af2c6g1w4wsb8].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#59a14f' />
+                <format attr='size' value='0.2738673985004425' />
+                <encoding attr='density-color' palette='green_10_0' type='interpolated' />
+                <format attr='mark-transparency' value='193' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1wxsy7f0ngdcqk1gqvd5w15szgub].[none:Longitude por offices:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.0bqkbw10k50fb01af2c6g1w4wsb8].[none:Brand:nk]' />
+              <lod column='[federated.0bqkbw10k50fb01af2c6g1w4wsb8].[none:City:nk]' />
+              <lod column='[federated.0bqkbw10k50fb01af2c6g1w4wsb8].[none:State/Province:nk]' />
+              <lod column='[federated.1wxsy7f0ngdcqk1gqvd5w15szgub].[none:coordinates Índice (generado):ok]' />
+              <color column='[federated.0bqkbw10k50fb01af2c6g1w4wsb8].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#59a14f' />
+                <format attr='size' value='0.2738673985004425' />
+                <encoding attr='density-color' palette='green_10_0' type='interpolated' />
+                <format attr='mark-transparency' value='193' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0bqkbw10k50fb01af2c6g1w4wsb8].[none:Latitude:qk]</rows>
+        <cols>([federated.0bqkbw10k50fb01af2c6g1w4wsb8].[none:Longitude:qk] + [federated.1wxsy7f0ngdcqk1gqvd5w15szgub].[none:Longitude por offices:qk])</cols>
+      </table>
+      <simple-id uuid='{8711F479-E7F4-4814-B8C3-41A9BA7DA96B}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='6' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='14' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='12' type='layout-basic' w='98400' x='800' y='1000'>
+              <zone h='98000' id='5' name='Hoja 1' w='49200' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='98000' id='7' name='Hoja 2' w='49200' x='50000' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97714' id='18' param='vert' type='layout-flow' w='95734' x='2133' y='1143'>
+                <zone fixed-size='280' h='41143' id='5' is-fixed='true' name='Hoja 1' w='95734' x='2133' y='1143'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41143' id='7' is-fixed='true' name='Hoja 2' w='95734' x='2133' y='42286'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{93EB116C-03D0-4D6C-BBA1-7393988F1757}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='worksheet' name='Hoja 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='102'>
+            <card type='columns' />
+          </strip>
+          <strip size='106'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{D892B61D-3733-488A-8D91-EA93253C13D0}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Hoja 1'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='Hoja 2'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='2' />
+        </viewpoint>
+      </viewpoints>
+      <active id='7' />
+      <simple-id uuid='{DC4CCC2B-C3A2-4257-AA9A-9F71CB437232}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Hoja 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='2' param='[federated.0bqkbw10k50fb01af2c6g1w4wsb8].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{C9CDEE50-0E7F-4D2A-BCFB-D0F7F9EC1B44}' />
+    </window>
+  </windows>
+</workbook>
