@@ -1,7 +1,7 @@
 # project-mongo
 
 
-En este proyecto consistia en elegir una ubicacion concreta para montar una oficina con unas carecteristicas determinadas y unas condiciones dadas.
+Este proyecto consistia en elegir una ubicacion concreta para montar una oficina con unas caracteristicas determinadas y unas condiciones dadas.
 
 Para ello se ha utilizado una base de datos de miles de compañias en todo el mundo, y se han filtrado para seleccionar las que más nos interesaban para aelegir la ubicacion más cercana a las que nos interesaban.
 
